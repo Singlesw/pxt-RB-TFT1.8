@@ -3,7 +3,7 @@
  */
 enum Color {
    //% block="Black0"
-   Black = 0x0000,
+   Black0 = 0x0000,
    //% block="Navy"
    Navy = 0x000F,
    //% block="DarkGreen"
