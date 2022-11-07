@@ -163,7 +163,7 @@ enum Color {
      /*
       * Initial TFT setup2
       */
-     //% block="Initialize TFT Display"
+     //% block="Initialize TFT Display2"
      //% weight=100
      export function init(): void {
          // set SPI frequency
