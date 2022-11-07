@@ -43,7 +43,7 @@ enum Color {
 }
 
 /**
-  * RB-TFT1.8-V2 Block
+  * RB-TFT1.82-V2 Block
   */
   //% color="#275C6B" icon="\uf26c" weight=95 block="RB-TFT18-V2"
  namespace RBTFT18 {
@@ -161,7 +161,7 @@ enum Color {
      }
 
      /*
-      * Initial TFT setup
+      * Initial TFT setup2
       */
      //% block="Initialize TFT Display"
      //% weight=100
