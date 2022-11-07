@@ -199,7 +199,7 @@ enum Color {
          // [0xA8] (my+mv+rgb)
          // [0x08] (rgb)
          // [0x68] (mx+mv+rgb)
-         send(TFTCommands.MADCTL, [0x28])
+         send(TFTCommands.MADCTL, [0xA8])
 
          // Set 16-bit color mode
          send(TFTCommands.COLMOD, [0x05])
