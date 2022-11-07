@@ -48,7 +48,7 @@ enum Color {
   //% color="#275C6B" icon="\uf26c" weight=95 block="RB-TFT18-V2"
  namespace RBTFT18 {
      // Display commands & constants
-     let TFTWIDTH = 132
+     let TFTWIDTH = 130
      let TFTHEIGHT = 162
 
      /**
@@ -60,6 +60,7 @@ enum Color {
           SLPOUT = 0x11,
           NORON = 0x13,
           INVOFF = 0x20,
+          INVON = 0x21,
           DISPOFF = 0x28,
           DISPON = 0x29,
           CASET = 0x2A,
@@ -187,7 +188,7 @@ enum Color {
          send(TFTCommands.VMCTR1, [0x0E])
 
          // Disable inversion
-         send(TFTCommands.INVOFF, [])
+         send(TFTCommands.INVON, [])
 
          // Memory access control
          send(TFTCommands.MADCTL, [0xC8])
