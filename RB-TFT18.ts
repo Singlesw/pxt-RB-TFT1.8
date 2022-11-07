@@ -190,8 +190,16 @@ enum Color {
          // Disable inversion
          send(TFTCommands.INVON, [])
 
-         // Memory access control
-         send(TFTCommands.MADCTL, [0xC8])
+         // Memory access control (display orientation)
+         // MADCTL_MY  0x80
+         // MADCTL_MX  0x40
+         // MADCTL_MV  0x20
+         // MADCTL_RGB 0x08
+         // [0xC8] (mx+my+rgb)
+         // [0xA8] (my+mv)
+         // [0x08] (rgb)
+         // [0x68] (mx+mv+rgb)
+         send(TFTCommands.MADCTL, [0xA8])
 
          // Set 16-bit color mode
          send(TFTCommands.COLMOD, [0x05])
