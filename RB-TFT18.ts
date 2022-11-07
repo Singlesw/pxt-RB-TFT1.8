@@ -196,10 +196,10 @@ enum Color {
          // MADCTL_MV  0x20
          // MADCTL_RGB 0x08
          // [0xC8] (mx+my+rgb)
-         // [0xA8] (my+mv)
+         // [0xA8] (my+mv+rgb)
          // [0x08] (rgb)
          // [0x68] (mx+mv+rgb)
-         send(TFTCommands.MADCTL, [0x68])
+         send(TFTCommands.MADCTL, [0x28])
 
          // Set 16-bit color mode
          send(TFTCommands.COLMOD, [0x05])
